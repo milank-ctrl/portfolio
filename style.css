@@ -94,6 +94,7 @@ a {
     padding: 0 1em;
     font-size: 1.2rem;
     transition: 0.3s all ease-in-out;
+    white-space: nowrap;
 }
 
 .main-nav a:hover {
