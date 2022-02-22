@@ -34,6 +34,7 @@ a {
 
 .nav-container {
     display: grid;
+    align-items: center;
     grid-template-columns: 66% auto;
     background: rgb(256, 256, 256, 20%);
 }
@@ -43,7 +44,7 @@ a {
 }
 
 .nav-container .social-header {
-    padding: 2em 2em 2em 0;
+    padding: 1em 2em 2em 0;
 }
 
 .social-header ul {
@@ -72,7 +73,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 2em 2em 2em 4em;
+    padding: 1em 2em 2em 4em;
 }
 
 .nav-container .nav-title {
@@ -196,6 +197,11 @@ span {
     overflow: hidden;
     cursor: pointer;
     transition: 0.3s all ease-in-out;
+    display: grid;
+    grid-template-rows: 33% auto;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .project-card:hover {
@@ -222,23 +228,36 @@ span {
     align-items: center;
 }
 
-.movie-app-card {
-    background: url("https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80");
-    height: 30vh;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
+
+.movie-app-card .status {
+    font-size: 1em;
+    font-weight: bold;
+    
+}
+
+.project-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black
+    
 }
 
 @media only screen and (max-width: 768px) {
     .nav-container {
         grid-template-columns: 55% auto;
     }
+    .main-nav a {
+        padding: 0 1em;
+        font-size: 1rem;
+      
+    }
     .iconify {
         font-size: 1.8em;
     }
     .nav-container header {
-        padding: 2em 2em 2em 2em;
+        padding: 1em 2em 2em 2em;
     }
     .content {
         padding-left: 2em;
@@ -249,33 +268,45 @@ span {
     }
     .content .subtitle {
         font-size: 1.4em;
-        margin: 1em .5em;
+        margin: 1.5em .5em;
         text-align: center;
     }
     .scroll {
-        padding-top: 6em;
+        padding-top: 5em;
     }
     .space-container {
         height: 10vh;
     }
     .space-ship {
-        height: 70px;
-        width: 100px;
+        height: 50px;
+        width: 70px;
         top: 10px;
     }
+
     #projects {
-        padding: 2em 2em 2em 2em;
+        padding: 1em 2em 2em 2em;
     }
+
+    .project-container {
+        margin-top: 2em;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(10rem, 100%), 1fr));
+        grid-gap: 1rem;
+    }
+
+    #projects h1 {
+        font-size: 2.5em;
+        margin-top: .5em;
+    }
+
+
     .project-card {
-        height: 15vh;
-    }
-    .movie-app-card {
-        background: url("https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80");
-        height: 30vh;
+        height: 20vh;
         object-fit: cover;
         background-repeat: no-repeat;
         background-position: center;
     }
+    
 }
 
 @keyframes scrollAnim {
