@@ -186,7 +186,7 @@ span {
 .project-container {
     margin-top: 3em;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
     grid-gap: 3rem;
 }
 
@@ -194,7 +194,7 @@ span {
     border: 1px solid #E5E2D9;
     border-radius: 0.5rem;
     box-shadow: .5em .5em 1em #1b1c1b;
-    height: 30vh;
+    height: 35vh;
     overflow: hidden;
     cursor: pointer;
     transition: 0.3s all ease-in-out;
