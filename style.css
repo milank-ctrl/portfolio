@@ -199,7 +199,7 @@ span {
     cursor: pointer;
     transition: 0.3s all ease-in-out;
     display: grid;
-    grid-template-rows: 50% auto;
+    grid-template-rows: 55% auto;
     font-weight: bold;
 }
 
