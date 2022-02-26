@@ -186,31 +186,40 @@ span {
 .project-container {
     margin-top: 3em;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
     grid-gap: 3rem;
 }
 
 .project-card {
-    border: 1px solid #E5E2D9;
-    border-radius: 0.5rem;
+    border-radius: 10px;
     box-shadow: .5em .5em 1em #1b1c1b;
-    height: 35vh;
+    border-color: #1b1c1b;
     overflow: hidden;
+    height: 320px;
     cursor: pointer;
     transition: 0.3s all ease-in-out;
     display: grid;
-    grid-template-rows: 33% auto;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    grid-template-rows: 50% auto;
+    font-weight: bold;
 }
 
 .project-card:hover {
     margin-top: -10px;
 }
 
+.project-img img {
+    width: 100%;
+    object-fit: scale-down;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .project-info {
-    background: rgb(204, 233, 249, 30%);
+    background: #F4C346;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-title {
@@ -218,8 +227,7 @@ span {
     justify-content: center;
     align-items: center;
     color: white;
-    padding-top: .25em;
-    padding-left: .5em;
+    font-size: 1.9em;
 }
 
 .project-tech {
@@ -227,22 +235,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-
-.movie-app-card .status {
     font-size: 1em;
-    font-weight: bold;
-    
-}
-
-.project-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: black
-    
 }
 
 @media only screen and (max-width: 768px) {
@@ -252,7 +245,6 @@ span {
     .main-nav a {
         padding: 0 1em;
         font-size: .9rem;
-      
     }
     .iconify {
         font-size: 1.8em;
@@ -283,31 +275,22 @@ span {
         width: 70px;
         top: 10px;
     }
-
     #projects {
         padding: 1em 2em 2em 2em;
     }
-
     .project-container {
         margin-top: 2em;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(min(10rem, 100%), 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(min(220px, 100%), 1fr));
         grid-gap: 1rem;
     }
-
     #projects h1 {
         font-size: 2.5em;
         margin-top: .5em;
     }
-
-
     .project-card {
-        height: 20vh;
-        object-fit: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        height: 260px;
     }
-    
 }
 
 @keyframes scrollAnim {
