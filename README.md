@@ -9,4 +9,4 @@ The following techs I am planning to use:
 - React
 - Web3
 
-This project is still work in progress.
+This project is still work in progress but you can check it here: [my portfolio site](https://milank.xyz/)
