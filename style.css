@@ -134,6 +134,7 @@ span {
 .content .subtitle {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-weight: 400;
     font-size: 1.8em;
     margin: 1em 1em;
@@ -329,10 +330,10 @@ span {
         grid-gap: 1rem;
     }
     .project-title {
-        font-size: 1.7em;
+        font-size: 1.4em;
     }
     .project-tech {
-        font-size: 1em;
+        font-size: .8em;
     }
     .project-card {
         height: 220px;
@@ -365,7 +366,7 @@ span {
     }
 
     .button-container button {  
-        font-size: 12px;
+        font-size: 11px;
       }
       
       .button-container .icon {      
