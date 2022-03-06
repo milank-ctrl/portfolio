@@ -169,7 +169,7 @@ span {
 }
 
 #projects {
-    padding: 2em 2em 2em 4em;
+    padding: 1em 2em 2em 4em;
     text-align: left;
     height: 100vh;
 }
@@ -178,28 +178,27 @@ span {
     font-weight: 500;
     font-size: 3em;
     line-height: 1.2em;
-    margin-top: 1em;
 }
 
 .project-container {
-    margin-top: 3em;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
-  align-items: center;
-  grid-gap: 2em;
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+    align-items: center;
+    grid-gap: 2em;
 }
 
 .project-card {
     border-radius: 20px;
-  box-shadow: 0.5em 0.5em 1em #1b1c1b;
-  border-color: #1b1c1b;
-  overflow: hidden;
-  height: 350px;
-  cursor: pointer;
-  transition: 0.3s all ease-in-out;
-  display: grid;
-  grid-template-rows: 40% 45% auto;
-  font-weight: bold;
+    box-shadow: 0.5em 0.5em 1em #1b1c1b;
+    border-color: #1b1c1b;
+    overflow: hidden;
+    height: 350px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    display: grid;
+    grid-template-rows: 40% 45% auto;
+    font-weight: bold;
 }
 
 .project-card:hover {
@@ -215,8 +214,8 @@ span {
 
 .project-info {
     background: #e9c46a;
-  color: #264653;
-  padding-top: 2em;
+    color: #264653;
+    padding-top: 2em;
 }
 
 .project-title {
@@ -240,9 +239,9 @@ span {
     justify-content: space-around;
     align-items: center;
     padding-bottom: 1em;
-  }
-  
-  .button-container button {
+}
+
+.button-container button {
     background: #264653;
     color: white;
     font-family: inherit;
@@ -263,9 +262,9 @@ span {
     cursor: pointer;
     transition: all 0.5s ease-in-out;
     animation: gradient 2s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
-  }
-  
-  .button-container .icon {
+}
+
+.button-container .icon {
     background: none;
     margin-left: 0.8em;
     position: absolute;
@@ -276,12 +275,12 @@ span {
     width: 2.2em;
     border-radius: 0.7em;
     right: 0.3em;
-  }
-  
-  .button-container button:hover {
+}
+
+.button-container button:hover {
     animation: gradient 3s infinite;
     transform: scale(1.05);
-  }
+}
 
 @media only screen and (max-width: 768px) {
     .nav-container {
@@ -345,34 +344,28 @@ span {
         grid-row-start: 1;
         grid-row-end: 3;
     }
-
     .project-img img {
         height: 100%;
     }
-
     .project-info {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
     }
-
     .button-container {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 3;
     }
-
-    .button-container button {  
+    .button-container button {
         font-size: 11px;
-      }
-      
-      .button-container .icon {      
+    }
+    .button-container .icon {
         height: 2em;
         width: 2em;
-      }
-      
+    }
 }
 
 @keyframes scrollAnim {
